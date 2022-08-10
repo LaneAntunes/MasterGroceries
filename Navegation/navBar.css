@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&family=Raleway&display=swap');
+
+/* Box sizing */
+* {
+    box-sizing: border-box;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+}
+
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    background: #353e47;
+    padding: 1em 3em 1em 3em;
+    color: white;
+    height: 60px;
+    min-width: 100%;
+    position: sticky;
+}
+
+.logo span {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.nav-content {
+    min-width: 20%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav-content * {
+    color: white;
+    text-decoration: none;
+}
+
+.gitHub-btn {
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background: rgb(255, 130, 0);
+    background: linear-gradient(90deg, rgb(254, 131, 0) 0%, rgb(250, 146, 34) 50%, rgb(250, 130, 2) 100%);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    padding: .2em .5em .2em .5em;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.gitHub-btn:hover {
+    transform: scale(1.1);
+    ;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+    /* For mobile phones: */
+    .hamburger {
+        display: block;
+
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .humburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-content {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #353e47;
+        min-width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-content>* {
+        margin: 16px 0;
+    }
+
+    .nav-content.active {
+        left: 0;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+    }
+}

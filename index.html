@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>master Groceries</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Navegation/navBar.css">
+    <link rel="stylesheet" href=" Banner/banner.css">
+</head>
+
+<body>
+    <main>
+        <nav class="nav-bar">
+            <div class="logo"><span>Master</span>Groceries</div>
+            <ul class="nav-content">
+                <li> <a href="#app" class="app-link">Go to App</a></li>
+                <li> <a href="#">Home</a></li>
+                <li class="button-container gitHub-btn"> <a
+                        href="https://github.com/LaneAntunes/MasterGroceries.git">GitHub</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+        <div class="hero-banner">
+            <div class="description-image">
+                <img src="images/bannerPic.png">
+            </div>
+            <div class="mobile-banner">
+                <h1 class="header">Plan your meals for the entire month in just a few minutes!</h1>
+                <img src="images/bannerPic.png">
+            </div>
+            <div class="app-features">
+                <h1 class="app-feat-title">Plan your meals for the entire month in just a few minutes!</h1>
+                <div>
+                    <img src="Banner/bannerImages/cart-icon.png">
+                    <h3>Add a meal and all ingredients will be automatically added to their
+                        respective supermarket sections on the grocery list.</h3>
+                </div>
+                <div>
+                    <img src="Banner/bannerImages/orange trash icon.png">
+                    <h3>Remove a meal and all ingredients will be automatically removed from the list.</h3>
+                </div>
+                <div>
+                    <img src="Banner/bannerImages/remove-icon.png">
+                    <h3>Cross-off items you have already purchased.</h3>
+                </div>
+
+                <div>
+                    <img src="Banner/bannerImages/quantity icon.png">
+                    <h3>Every time a meal is added or removed, the number of servings is updated.</h3>
+                </div>
+
+                <div>
+                    <img src="Banner/bannerImages/price-icon.png">
+                    <h3>The total cost of all ingredients added to the list is also updated.</h3>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+
+        <div class="main-food-container" id="app">
+            <div class="left-div">
+                <div class="meal-containers">
+                    <div class="type-of-meal box1 " id="breakfast">
+                        <h1 id="breakfast">Breakfast<h1>
+                    </div>
+                    <div class="type-of-meal box2" id="lunch">
+                        <h1 id="lunch">Lunch<h1>
+                    </div>
+                    <div class="type-of-meal box3" id="dinner">
+                        <h1 id="dinner">Dinner<h1>
+                    </div>
+                    <div class="type-of-meal box4" id="snacks">
+                        <h1 id="snacks">Snacks<h1>
+                    </div>
+
+                </div>
+            </div>
+            <div class="right-div">
+                <div class="chosen-meals-main-container">
+                    <div class="total-cost-box">
+                        <h1>Total Cost</h1>
+                        <h2 id="total-cost">0€</h2>
+                    </div>
+                    <div class="chosen-meals-containers">
+                        <div class="each-chosen-container">
+                            <div class="meal-servings">
+                                <h2 class="meal-servings-title">Breakfast servings</h2>
+                                <div class="serving-container">
+                                    <h2 id="breakfast-container" class="serving-div ">0</h2>
+                                </div>
+                            </div>
+                            <div class="added-meal-container breakfast-container"></div>
+                        </div>
+                        <div class="each-chosen-container">
+                            <div class="meal-servings">
+                                <h2>Lunch servings</h2>
+                                <div class="serving-container">
+                                    <h2 id="lunch-container" class="serving-div ">0</h2>
+                                </div>
+                            </div>
+                            <div class="added-meal-container lunch-container"></div>
+                        </div>
+                        <div class="each-chosen-container">
+                            <div class="meal-servings">
+                                <h2>Dinner servings</h2>
+                                <div class="serving-container">
+                                    <h2 id="dinner-container" class="serving-div">0</h2>
+                                </div>
+                            </div>
+                            <div class="added-meal-container dinner-container"></div>
+                        </div>
+                        <div class="each-chosen-container">
+                            <div class="meal-servings">
+                                <h2>Snacks servings</h2>
+                                <div class="serving-container">
+                                    <h2 id="snacks-container" class="serving-div ">0</h2>
+                                </div>
+                            </div>
+                            <div class="added-meal-container snacks-container"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grocery-list">
+                    <div>
+                        <span>Fruits & Veggies</span>
+                        <div class="fruits-veggies-section supermarket-sections"></div>
+                    </div>
+
+                    <div>
+                        <span>Dairy</span>
+                        <div class="dairy-section supermarket-sections"></div>
+                    </div>
+
+                    <div>
+                        <span>Condiments</span>
+                        <div class="condiments-section supermarket-sections"></div>
+                    </div>
+
+                    <div>
+                        <span>Meat</span>
+                        <div class="meat-section supermarket-sections"></div>
+                    </div>
+                    <div>
+                        <span>Grains & Pasta</span>
+                        <div class="grains-pasta-section supermarket-sections"></div>
+                    </div>
+                    <div>
+                        <span>Other stuff</span>
+                        <div class="other-stuff-section supermarket-sections"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="index.js"></script>
+
+</body>
+
+</html>
