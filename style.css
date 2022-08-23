@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 /* ------------------- */
 /* Reset               */
 /* ------------------- */
@@ -9,7 +9,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    font-family: Verdana, 'Geneva', Tahoma, sans-serif
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Reset margins */
@@ -35,6 +35,10 @@ body {
     min-height: 100vh;
     justify-content: center;
 
+}
+
+a {
+    text-decoration: none;
 }
 
 /* make images easier to work with */
@@ -68,10 +72,10 @@ picture {
 
 :root {
     /*typography*/
-    --font-size-one: 1.8rem;
-    --font-size-two: 1.3rem;
-    --font-size-three: 1rem;
-    --font-size-four: .8rem;
+    --font-size-one: 1.3rem;
+    --font-size-two: 1rem;
+    --font-size-three: .8rem;
+    --font-size-four: .7rem;
     /**/
     --font-weight-one: 600;
     --font-weight-two: 500;
@@ -81,17 +85,18 @@ picture {
     --font-color-three: #fbc495;
     --font-color-four: #000000;
     /*font family*/
-    --font-cursive: 'Parisienne', cursive;
+
 }
 
 h1 {
     font-size: var(--font-size-one);
-    font-family: var(--font-cursive);
     text-align: center;
+    font-style: italic;
 }
 
+
 h2 {
-    font-family: var(--font-cursive);
+
     font-size: var(--font-size-two);
     font-weight: var(--font-weight-two);
 }
@@ -109,7 +114,7 @@ h4 {
 p {
     font-size: var(--font-size-three);
     color: var(--font-color-one);
-    font-family: 'Arial', Helvetica, sans-serif;
+
 
 }
 
@@ -244,13 +249,13 @@ main {
 
 .food-container span {
     font-size: var(--font-size-four);
-    background: rgba(0, 0, 0, 0.578);
+    background: rgba(0, 0, 0, 0.684);
     width: 100%;
     padding: .5em 1.5em .5em .1.5em;
 }
 
 .food-container h2 {
-    background: rgba(0, 0, 0, 0.674);
+    background: rgba(0, 0, 0, 0.779);
     padding-right: .3em;
     padding-top: .3em;
     border: 1px solid rgba(255, 255, 255, 0.401);
@@ -312,13 +317,13 @@ main {
 }
 
 .add-to-meals-button {
-
+    margin-top: .2em;
     color: rgb(255, 255, 255);
     padding: 3px 8px 3px 8px;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
-    font-size: var(--font-size-four);
+    font-size: var(--font-size-three);
     background: #f9903d;
     cursor: pointer;
     transition: .4s;
@@ -428,6 +433,7 @@ main {
     gap: 1em;
 
     font-size: .7rem;
+    font-weight: 400;
     align-self: center;
     margin-bottom: .3em;
     margin-top: 1em;
@@ -507,7 +513,7 @@ main {
 }
 
 .trash-icon {
-    height: 14px;
+    height: 12px;
     margin-top: 3px;
 }
 
@@ -517,7 +523,7 @@ main {
 }
 
 .trash-icon:hover {
-    transform: scale(1.4);
+    transform: scale(1.1);
 
 }
 
@@ -577,7 +583,7 @@ main {
 
 .grocery-list span {
     max-width: 100px;
-    font-family: var(--font-cursive);
+
     font-size: 1.3rem;
     color: var(--font-color-three);
     font-size: var(--font-size-two);
@@ -648,7 +654,8 @@ main {
     .meal-containers h1 {
         gap: 0em;
         padding: 0em;
-        font-size: 1.5rem;
+        font-size: 1rem;
+        font-weight: 400;
     }
 
     .food-container {
@@ -658,16 +665,18 @@ main {
 
     .food-container span {
         font-size: .6rem;
+        font-weight: 400;
     }
 
     .food-container h2 {
-        font-size: 1.1rem;
+        font-size: .8rem;
+        font-weight: 400;
 
     }
 
     /*recipes*/
     .heading h1 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
 
     }
 
@@ -715,7 +724,7 @@ main {
     }
 
     .added-meal {
-        font-size: .6rem;
+        font-size: .7rem;
     }
 
     .meal-servings {
@@ -726,7 +735,7 @@ main {
     }
 
     .meal-servings h2 {
-        font-size: 1rem;
+        font-size: .7rem;
     }
 
     .each-chosen-container {
@@ -756,7 +765,7 @@ main {
     }
 
     .grocery-list span {
-        font-size: 1.3rem;
+        font-size: 1rem;
         max-width: 100%;
         padding: 0;
         margin: .8em 0em .8em 0em;
@@ -791,7 +800,7 @@ main {
     }
 
     .add-to-meals-button {
-        font-size: .6rem;
+        font-size: .8rem;
     }
 
     .all-foods-container {
