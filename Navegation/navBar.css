@@ -26,7 +26,7 @@
 .nav-content * {
     color: white;
     text-decoration: none;
-    font-size: .9rem;
+    font-size: var(--font-size-three);
 }
 
 .gitHub-btn {
