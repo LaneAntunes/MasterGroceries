@@ -161,11 +161,17 @@
 
     .app-features h3 {
         font-size: var(--font-size-four);
+        font-weight: 400;
     }
 
     .app-feat-title {
         display: none;
 
+    }
+
+    .header {
+        color: black;
+        font-size: 1.2;
     }
 
 
