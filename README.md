@@ -4,7 +4,8 @@
   ![CSS](https://img.shields.io/badge/-CSS-333333?style=flat&logo=CSS3&logoColor=1572B6)
   ![JavaScript](https://img.shields.io/badge/-JavaScript-333333?style=flat&logo=javascript)
 
-### Add a new meal without changing the JS file.
+### Add new meals without changing the JS file. 
+- Just create a new object
 
 <img src="images/carbon (2).png" alt="carbon" width="300"/>
 
@@ -16,9 +17,12 @@
 * The number of servings and price is updated whenever a meal is added or removed.
 
 ### Responsiveness
-* It's beautifully design with CSS3 variables, flexbox and media queries for table and mobile.
+* It's beautifully designed with CSS3 variables, flexbox and media queries for table and mobile.
 
 ## Live
+
+https://laneantunes.github.io/mastergroceries.github.io/
+
 <img src="images/masterGroceries.gif" alt="masterGroceries" width="300"/>
 
 
