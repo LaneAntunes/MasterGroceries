@@ -6,6 +6,17 @@
 
 ### Add a new meal without changing the JS file.
 
-* The user can add, remove meals and cross off items from the list.
-* The number of servings and price is uptated whenever a meal is added or removed.
-* 
+<img src="images/carbon (2).png" alt="isolated" width="300"/>
+
+
+### Functionalities
+
+* When a meal is added to the list, all ingredients are automatically added to their respective supermarket sections on the grocery list.
+* The user can add, remove meals and cross off items they have already purchased.
+* The number of servings and price is updated whenever a meal is added or removed.
+
+### Responsiveness
+* It's beautifully design with CSS3 variables, flexbox and media queries for table and mobile.
+
+## Live
+
