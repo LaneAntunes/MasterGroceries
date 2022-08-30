@@ -12,6 +12,8 @@
 
 ### Functionalities
 
+* The program loops over the objects in FoodData.js, and displays the information on the screen. (Recipe, price, number of servings, price per serving etc..)
+
 * When a meal is added, all ingredients are automatically added to their respective supermarket sections on the grocery list.
 * The user can add, remove meals and cross off items they have already purchased.
 * The number of servings and price is updated whenever a meal is added or removed.
