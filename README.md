@@ -6,7 +6,7 @@
 
 ### Add a new meal without changing the JS file.
 
-<img src="images/carbon (2).png" alt="isolated" width="300"/>
+<img src="images/carbon (2).png" alt="carbon" width="300"/>
 
 
 ### Functionalities
@@ -19,4 +19,6 @@
 * It's beautifully design with CSS3 variables, flexbox and media queries for table and mobile.
 
 ## Live
+<img src="images/masterGroceries.gif" alt="masterGroceries" width="300"/>
+
 
